@@ -89,10 +89,6 @@ button { cursor: pointer; }
 .skip-link { position: fixed; top: 12px; left: 16px; z-index: 30; padding: 12px 20px; background: var(--primary); color: var(--primary-foreground); transform: translateY(-180%); }
 .skip-link:focus { transform: translateY(0); }
 .page-shell { width: min(100%, 1200px); padding: 0 32px; margin: auto; }
-.intro { padding: 112px 0 96px; }
-.eyebrow { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; }
-.intro h1 { max-width: 800px; margin-top: 24px; font-size: clamp(40px, 7vw, 84px); font-weight: 500; line-height: 1.12; letter-spacing: -.05em; }
-.intro-line { margin-top: 40px; width: 72px; height: 4px; background: var(--brand-yellow); }
 .home-section { min-height: 280px; padding: 48px 0; display: flex; align-items: baseline; gap: 24px; border-top: 1px solid color-mix(in srgb, var(--foreground) 18%, transparent); }
 .section-number { font-size: 12px; font-family: var(--font-geist-mono), monospace; color: var(--primary); }
 .home-section h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 500; letter-spacing: -.03em; }
@@ -106,7 +102,6 @@ button { cursor: pointer; }
   .social-links { gap: 0; padding-right: 4px; margin-right: 0; }
   .social-links .icon-button { width: 36px; }
   .page-shell { padding: 0 20px; }
-  .intro { padding: 80px 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; }

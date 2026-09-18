@@ -1,0 +1,88 @@
+.hero {
+  background: var(--background);
+  color: var(--foreground);
+  overflow: hidden;
+}
+
+.inner {
+  width: min(100%, 1200px);
+  margin-inline: auto;
+  padding: 76px 32px 64px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(32px, 6vw, 88px);
+  align-items: center;
+}
+
+.copy, .visual { min-width: 0; }
+.eyebrow, .cornerLabel, .caption, .note, .footer {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  letter-spacing: .08em;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+.eyebrow > span { width: 7px; height: 7px; flex-shrink: 0; background: var(--primary); border-radius: 50%; }
+.title { font-size: clamp(58px, 6.5vw, 88px); font-weight: 500; letter-spacing: -.065em; line-height: 1.02; }
+.title > span { color: var(--primary); }
+.introduction { margin-top: 32px; font-size: 25px; font-weight: 500; letter-spacing: -.035em; }
+.dot { color: var(--primary); }
+.description { max-width: 360px; margin-top: 10px; font-size: 16px; line-height: 1.8; text-wrap: pretty; }
+.actions { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; margin-top: 30px; }
+.primaryLink { display: inline-flex; align-items: center; gap: 28px; min-height: 50px; padding: 12px 20px; background: var(--primary); color: var(--primary-foreground); font-size: 13px; font-weight: 500; border-radius: 3px; }
+.contactLink { display: inline-flex; align-items: center; gap: 16px; min-height: 48px; font-size: 13px; font-weight: 500; }
+.primaryLink:hover, .contactLink:hover { text-decoration: underline; text-underline-offset: 5px; }
+.primaryLink > span, .contactLink > span { font-size: 20px; }
+
+.visual { padding-top: 20px; }
+.imagePanel {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background: var(--brand-blue);
+  border-radius: 160px 160px 6px 6px;
+}
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgb(242 239 231 / .09) 1px, transparent 1px), linear-gradient(90deg, rgb(242 239 231 / .09) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.orbit { position: absolute; top: 14%; left: 12%; width: 76%; aspect-ratio: 1; border: 1px solid rgb(255 212 68 / .65); border-radius: 50%; }
+/* Point at -45 degrees: center + radius × (cos θ, sin θ).
+   Account for the 1px border so the dot sits on the stroke center. */
+.orbit::after { content: ""; position: absolute; width: 12px; height: 12px; left: calc(85.355339% + .353553px); top: calc(14.644661% - .353553px); transform: translate(-50%, -50%); border-radius: 50%; background: var(--brand-yellow); box-shadow: 0 0 0 7px rgb(255 212 68 / .12); }
+.cornerLabel { position: absolute; top: 35px; left: 0; width: 100%; text-align: center; color: var(--brand-cream); font-size: 9px; letter-spacing: .13em; }
+.image { position: absolute; bottom: 0; left: 0; width: 100%; height: 88%; object-fit: contain; object-position: center bottom; }
+.caption { position: absolute; inset: auto 0 0; min-height: 56px; padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--brand-cream); background: var(--brand-blue); border-top: 1px solid rgb(242 239 231 / .2); font-size: 10px; letter-spacing: .04em; }
+.caption > span:first-child { font-weight: 600; color: var(--brand-yellow); }
+.note { display: flex; align-items: center; gap: 10px; padding: 18px 2px 0; font-size: 11px; }
+.note > span:first-child { color: var(--primary); font-size: 20px; }
+.cursor { margin-left: auto; color: var(--primary); font-size: 20px; }
+.footer { max-width: 1136px; margin: 0 auto; padding: 22px 0; border-top: 1px solid color-mix(in srgb, var(--foreground) 18%, transparent); display: flex; justify-content: space-between; gap: 16px; font-size: 9px; letter-spacing: .12em; }
+
+@media (max-width: 1199px) { .footer { margin-inline: 32px; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .inner { gap: 28px; padding-top: 56px; }
+  .title { font-size: 64px; }
+  .eyebrow { font-size: 9px; }
+  .caption { padding-inline: 12px; font-size: 8px; }
+  .imagePanel { border-radius: 120px 120px 6px 6px; }
+}
+@media (max-width: 767px) {
+  .inner { grid-template-columns: 1fr; padding: 48px 24px 32px; gap: 40px; }
+  .title { font-size: clamp(58px, 12vw, 84px); }
+  .eyebrow { font-size: 9px; margin-bottom: 24px; }
+  .introduction { margin-top: 26px; }
+  .description { max-width: 420px; }
+  .visual { width: min(100%, 440px); padding-top: 0; justify-self: center; }
+  .imagePanel { border-radius: 140px 140px 6px 6px; }
+  .footer { margin-inline: 24px; font-size: 8px; }
+}

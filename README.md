@@ -34,12 +34,14 @@ need network access to download fonts; fonts are served locally at runtime.
 - `app/page.tsx`: one-page home with section anchors; section content is pending.
 - `app/layout.tsx`: root document, fonts, and default metadata.
 - `app/globals.css`: global styles and theme tokens.
+- `components/home/`: home-page sections and scoped styles.
 - `components/layout/`: shared site navigation.
 - `components/ui/`: theme toggle and small SVG icons.
 - `lib/site.ts`: one-page section links.
 - `data/social-links.json`: editable social profile URLs.
 - `public/`: static assets.
 - `public/images/brand/`: original transparent logos for light/dark backgrounds.
+- `public/images/portraits/`: original portrait, served through Next.js image optimization.
 - `AGENTS.md`: project conventions and validation requirements.
 
 ## Colors and themes
@@ -85,3 +87,6 @@ Before public launch:
 
 Do not commit secrets. Document future required variables with placeholder
 values in an example environment file.
+
+The home hero follows the light/dark theme, with editorial typography and a
+blue portrait panel containing a subtle grid. Its styling is scoped to the hero.
