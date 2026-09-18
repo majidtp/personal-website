@@ -1,0 +1,7 @@
+[
+  { "label": "Telegram", "icon": "telegram", "href": "" },
+  { "label": "Instagram", "icon": "instagram", "href": "" },
+  { "label": "X", "icon": "x", "href": "" },
+  { "label": "Email", "icon": "email", "href": "" },
+  { "label": "YouTube", "icon": "youtube", "href": "" }
+]
