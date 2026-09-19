@@ -90,3 +90,46 @@ values in an example environment file.
 
 The home hero follows the light/dark theme, with editorial typography and a
 blue portrait panel containing a subtle grid. Its styling is scoped to the hero.
+
+## Research and writing
+
+Edit `data/research.json` to manage the Case studies section. It links to
+published research, articles, and notes, rather than portfolio projects.
+The initial item is an unpublished template and is not shown on the website.
+
+- `id`: unique stable identifier.
+- `title`, `summary`, `topic`: article heading, short description, and subject.
+- `publication`: name of the website where the article is published.
+- `date`: publication date in `YYYY-MM-DD` format, or empty to omit it.
+- `href`: an existing internal route such as `/writing/article-slug`, or a full
+  external `https://` URL. Adding an internal URL does not create its page.
+- `published`: set to `true` when the article and destination are ready.
+
+Items appear in JSON order. Invalid/empty destinations and unpublished items
+are hidden. External articles open in a new tab. No articles means the section
+shows an honest empty state. Changes to JSON require a rebuild on deployment.
+
+## Professional background
+
+Edit `data/background.json` for work experience, its recognition highlight, and education. Entries
+render in their listed order. Work experience supports an optional `href` for
+the organization; use a full HTTPS URL or leave it empty. Periods are editable
+text, so ongoing roles can use “Present”. No graduation dates are assumed.
+The section uses two columns on desktop and stacks on mobile.
+
+## Services
+
+Edit `data/services.json` to change service headings, descriptions, focus tags,
+and contact-link labels. Available icons: `compass`, `code`, and `collaborate`.
+Each service links to the one-page contact section. Cards follow both themes
+and stack vertically on mobile; hover movement respects reduced motion.
+
+## Contact
+
+Edit `data/contact.json` for the contact email and introduction, and
+`data/social-links.json` for profile links (including the header email icon).
+The quick-contact form validates fields and opens a mailto draft in the user's
+email app. It does not submit to a server or claim successful delivery; the user
+must send the draft. A configured email app is required; the direct email
+address remains visible as a fallback. Direct website delivery needs a separate
+email provider and server-side implementation.

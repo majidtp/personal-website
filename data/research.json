@@ -1,0 +1,16 @@
+{
+  "title": "Case studies",
+  "description": "Notes, investigations, and articles on computer science. Published here and across the web.",
+  "items": [
+    {
+      "id": "first-article",
+      "title": "Your article title",
+      "summary": "A short explanation of the question you explored and what readers will learn.",
+      "topic": "Computer science",
+      "publication": "Your publication name",
+      "date": "2026/01/01 01:01:01",
+      "href": "/sadasdsaad",
+      "published": true
+    }
+  ]
+}

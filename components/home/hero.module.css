@@ -15,7 +15,7 @@
 }
 
 .copy, .visual { min-width: 0; }
-.eyebrow, .cornerLabel, .caption, .note, .footer {
+.eyebrow, .cornerLabel, .caption, .note {
   font-family: var(--font-geist-mono), monospace;
 }
 
@@ -66,9 +66,7 @@
 .note { display: flex; align-items: center; gap: 10px; padding: 18px 2px 0; font-size: 11px; }
 .note > span:first-child { color: var(--primary); font-size: 20px; }
 .cursor { margin-left: auto; color: var(--primary); font-size: 20px; }
-.footer { max-width: 1136px; margin: 0 auto; padding: 22px 0; border-top: 1px solid color-mix(in srgb, var(--foreground) 18%, transparent); display: flex; justify-content: space-between; gap: 16px; font-size: 9px; letter-spacing: .12em; }
 
-@media (max-width: 1199px) { .footer { margin-inline: 32px; } }
 @media (min-width: 768px) and (max-width: 1023px) {
   .inner { gap: 28px; padding-top: 56px; }
   .title { font-size: 64px; }
@@ -84,5 +82,4 @@
   .description { max-width: 420px; }
   .visual { width: min(100%, 440px); padding-top: 0; justify-self: center; }
   .imagePanel { border-radius: 140px 140px 6px 6px; }
-  .footer { margin-inline: 24px; font-size: 8px; }
 }

@@ -1,0 +1,53 @@
+{
+  "title": "Background",
+  "experience": {
+    "title": "Work experience",
+    "items": [
+      {
+        "id": "tarh2tarh",
+        "role": "Chief Technology Officer",
+        "organization": "tarh2tarh",
+        "href": "https://tarh2tarh.com",
+        "period": "2018 — Present"
+      },
+      {
+        "id": "ministry-ict",
+        "role": "Technology Specialist",
+        "organization": "Ministry of Information and Communications Technology",
+        "href": "",
+        "period": "2019 — 2021"
+      },
+      {
+        "id": "freelance",
+        "role": "Freelancer",
+        "organization": "Independent",
+        "href": "",
+        "period": "2015 — Present"
+      }
+    ],
+    "recognition": {
+      "title": "Recognition beyond the day-to-day",
+      "description": "Recipient of more than three certificates of appreciation and winner of multiple competitions."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "id": "masters",
+        "degree": "Master’s in Computer Science",
+        "institution": "Science and Research Branch, Islamic Azad University, Tehran"
+      },
+      {
+        "id": "bachelors",
+        "degree": "Bachelor’s in Software Engineering",
+        "institution": "National University of Skills, Iran"
+      },
+      {
+        "id": "associate",
+        "degree": "Associate Degree in Engineering Technology",
+        "institution": "Neyshabur Technical College"
+      }
+    ]
+  }
+}

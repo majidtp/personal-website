@@ -12,7 +12,7 @@ export function Hero() {
           <p className={styles.introduction}>I’m Majid<span className={styles.dot}>.</span></p>
           <p className={styles.description}>A computer science researcher exploring ideas and turning complexity into clarity.</p>
           <div className={styles.actions}>
-            <Link href="/#case-studies" className={styles.primaryLink}>Explore my work <span aria-hidden="true">↗</span></Link>
+            <Link href="/#case-studies" className={styles.primaryLink}>Read my research <span aria-hidden="true">↗</span></Link>
             <Link href="/#contact" className={styles.contactLink}>Let’s talk <span aria-hidden="true">↗</span></Link>
           </div>
         </div>
@@ -27,7 +27,6 @@ export function Hero() {
           <div className={styles.note}><span aria-hidden="true">↳</span> no Cache, just Flow<span className={styles.cursor} aria-hidden="true">_</span></div>
         </div>
       </div>
-      <div className={styles.footer} aria-hidden="true"><span>01 — INTRODUCTION</span><span>KEEP EXPLORING ↓</span></div>
     </section>
   );
 }

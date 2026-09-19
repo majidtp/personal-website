@@ -1,0 +1,33 @@
+{
+  "title": "Good ideas deserve thoughtful engineering.",
+  "description": "From the first technical decision to the software you rely on. Here’s how we can work together.",
+  "items": [
+    {
+      "id": "consulting",
+      "icon": "compass",
+      "eyebrow": "PLAN WITH CLARITY",
+      "title": "Technology consulting",
+      "description": "I help you build a technology-driven business while making the most of your budget. Together, we can choose the right tools, avoid unnecessary costs, and plan beyond the first release—so you build a foundation for growth, not just another piece of software.",
+      "tags": ["Technical strategy", "Architecture", "Long-term thinking"],
+      "cta": "Let’s map it out"
+    },
+    {
+      "id": "development",
+      "icon": "code",
+      "eyebrow": "BUILD FOR THE LONG RUN",
+      "title": "Software development",
+      "description": "From everyday apps to advanced systems software, my team and I can bring what you need to life across platforms. Delivery is only the beginning: ongoing support and maintainability help your software stay useful as your needs evolve.",
+      "tags": ["Applications", "Systems software", "Ongoing support"],
+      "cta": "Let’s build something"
+    },
+    {
+      "id": "collaboration",
+      "icon": "collaborate",
+      "eyebrow": "EXPLORE TOGETHER",
+      "title": "Independent collaboration",
+      "description": "Have an original idea and the technical skills to help bring it to life? I’m open to teaming up with fellow builders, exploring new directions, and working through the challenges together. Let’s see what we can create.",
+      "tags": ["Shared ideas", "Technical partners", "Experimentation"],
+      "cta": "Share your idea"
+    }
+  ]
+}
