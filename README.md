@@ -50,13 +50,13 @@ Palette: https://colorhunt.co/palette/ffd4440061995f5f5ff2efe7
 
 | Role | Light | Dark |
 | --- | --- | --- |
-| Background | Cream `#F2EFE7` | Gray `#5F5F5F` |
+| Background | Cream `#F2EFE7` | Deep navy `#0B1426` |
 | Text | Gray `#5F5F5F` | Cream `#F2EFE7` |
 | Primary / focus | Blue `#006199` | Yellow `#FFD444` |
-| Text on primary | Cream `#F2EFE7` | Blue `#006199` |
+| Text on primary | Cream `#F2EFE7` | Deep navy `#0B1426` |
 | Accent / text on accent | Yellow / blue | Yellow / blue |
 
-Theme tokens live in `app/globals.css`. The initial theme follows `prefers-color-scheme`; the navigation toggle persists an explicit choice in localStorage. A small head script restores that choice before the page paints. Storage failures are handled gracefully.
+Theme tokens live in `app/globals.css`. The initial theme is dark, regardless of system preferences; the navigation toggle persists an explicit choice in localStorage. A small head script restores that choice before the page paints. Storage failures are handled gracefully.
 Use semantic Tailwind utilities such as `bg-background`, `text-foreground`,
 `bg-primary`, and `text-primary-foreground`. Use these tokens when building pages. Keep blue off gray backgrounds for body text.
 
@@ -133,3 +133,7 @@ email app. It does not submit to a server or claim successful delivery; the user
 must send the draft. A configured email app is required; the direct email
 address remains visible as a fallback. Direct website delivery needs a separate
 email provider and server-side implementation.
+
+The shared footer includes site links, email, social profiles, and a back-to-top
+link. Dark mode uses deep navy with slightly raised blue surfaces. Subtle radial
+gradients add depth; smooth scrolling respects reduced-motion preferences.

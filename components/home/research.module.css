@@ -15,7 +15,7 @@
 .arrow { color: var(--primary); flex-shrink: 0; }
 .summary { max-width: 680px; font-size: 15px; line-height: 1.8; margin-top: 12px; }
 .publication { font-size: 11px; margin-top: 18px; }
-.empty { display: flex; align-items: center; gap: 28px; padding: 36px; border: 1px solid color-mix(in srgb, var(--foreground) 20%, transparent); border-radius: 4px; }
+.empty { display: flex; align-items: center; gap: 28px; padding: 36px; border: 1px solid color-mix(in srgb, var(--foreground) 20%, transparent); border-radius: 12px; background: var(--surface); }
 .emptyMark { flex-shrink: 0; color: var(--primary); font-size: 24px; }
 .empty h3 { font-size: 20px; font-weight: 500; letter-spacing: -.025em; }
 .empty p { margin-top: 8px; font-size: 14px; line-height: 1.8; }
@@ -25,3 +25,7 @@
   .article { grid-template-columns: 24px 1fr; gap: 12px; }
   .empty { align-items: flex-start; flex-direction: column; gap: 16px; padding: 24px; }
 }
+
+.article { border-radius: 10px; transition: background 160ms ease; }
+.article:focus-within { background: var(--surface); }
+@media (hover: hover) { .article:hover { background: var(--surface); } }

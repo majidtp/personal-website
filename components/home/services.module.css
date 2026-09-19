@@ -5,8 +5,8 @@
 .heading h2 { max-width: 560px; font-size: clamp(32px, 4vw, 48px); line-height: 1.15; font-weight: 500; letter-spacing: -.045em; text-wrap: balance; }
 .intro { max-width: 340px; font-size: 15px; line-height: 1.8; }
 .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; align-items: stretch; }
-.card { --card-ink: var(--foreground); --card-accent: var(--primary); position: relative; display: flex; flex-direction: column; padding: 30px 26px 20px; color: var(--card-ink); border: 1px solid color-mix(in srgb, var(--foreground) 20%, transparent); border-radius: 18px; background: color-mix(in srgb, var(--primary) 3%, var(--background)); transition: transform 180ms ease; }
-.card:nth-child(2) { --card-ink: var(--brand-cream); --card-accent: var(--brand-yellow); background: var(--brand-blue); border-color: var(--brand-blue); }
+.card { --card-ink: var(--foreground); --card-accent: var(--primary); position: relative; display: flex; flex-direction: column; padding: 30px 26px 20px; color: var(--card-ink); border: 1px solid color-mix(in srgb, var(--foreground) 20%, transparent); border-radius: 18px; background: radial-gradient(ellipse at 100% 0, var(--glow-blue), transparent 65%), var(--surface); box-shadow: var(--panel-shadow); transition: transform 180ms ease; }
+.card:nth-child(2) { --card-ink: var(--brand-cream); --card-accent: var(--brand-yellow); background: linear-gradient(150deg, var(--brand-blue), #07365b); border-color: var(--brand-blue); }
 .card:nth-child(3) { border-top: 3px solid var(--brand-yellow); }
 .cardTop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 34px; }
 .icon { width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center; color: var(--brand-blue); background: var(--brand-yellow); }

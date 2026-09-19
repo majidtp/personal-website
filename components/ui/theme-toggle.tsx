@@ -5,7 +5,7 @@ import { Icon } from "./icon";
 export function ThemeToggle() {
   function toggleTheme() {
     const root = document.documentElement;
-    const current = root.dataset.theme ?? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    const current = root.dataset.theme ?? "dark";
     const next = current === "dark" ? "light" : "dark";
     root.dataset.theme = next;
     try { localStorage.setItem("theme", next); } catch { /* Theme still works without storage. */ }
